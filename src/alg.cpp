@@ -20,7 +20,8 @@ uint64_t fact(uint16_t n) {
     uint16_t num = 1;
     uint64_t res = 1;
     if (n == 0) return 1;
-    else {
+    else
+    {
         while (num != n) {
             num += 1;
             res *= num;
@@ -41,6 +42,7 @@ double expn(double x, uint16_t count) {
         res += calcItem(x, i);
         i++;
     }
+    res += calcItem(x, i);
     return res;
 }
 
@@ -52,6 +54,7 @@ double sinn(double x, uint16_t count) {
         res = res + calcItem(x, 2 * i - 1) * pown(-1, i - 1);
         i++;
     }
+    res = res + calcItem(x, 2 * i - 1) * pown(-1, i - 1);
     return res;
 }
 
