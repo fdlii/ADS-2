@@ -25,8 +25,8 @@ uint64_t fact(uint16_t n) {
             num += 1;
             res *= num;
         }
-        return res;
     }
+    return res;
 }
 
 double calcItem(double x, uint16_t n) {
